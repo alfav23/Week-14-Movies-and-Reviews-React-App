@@ -17,12 +17,13 @@ export default class Movie extends React.Component {
             <div>
                 {this.movieList.map((movie, index) =>
                     <div key={index} className='card'>
-                        <img className='card-img-top' src='./images/Locked-in-img.jpg' alt='Movie poster for the movie "Locked-in"'/>
+                        {/* want image alt to say 'movie poster for {movie.movieName} but not sure how to concatenate*/}
+                        <img className='card-img-top' src={movie.imgFile} alt='Movie poster'/>
                         <h5 className='card-title'>{movie.movieName}</h5>
                         <p className='card-body'>{movie.movieSynopsis}</p>
                     </div>)}
-                {/* <Review />
-                <ReviewForm /> */}
+                <Review />
+                <ReviewForm />
                 
             </div>
         )
