@@ -1,7 +1,70 @@
 /* my css */
+#movie-cards .card-img-top {
+  width: 300px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
 
+#movie-cards .card-body{
+  border-color: #282c34;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  text-align: left;
+}
 
+#movie-cards {
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  justify-content: center;
+}
 
+#review-cards {
+  margin: 1rem;
+  max-width: 300px;
+  justify-content: left;
+}
+
+#review-cards .card-footer {
+  text-align: end;
+}
+
+#review-cards .card-title {
+  text-align: end;
+  padding: 2px;
+  margin: 2px;
+}
+
+#review-cards .card-body {
+  margin: 1rem;
+  justify-content: left;
+  border-color: #282c34;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+#review-text-box {
+  border-radius: 4px;
+  width: 20rem;
+}
+
+#inputGroupSelect01{
+  border-radius: 8px;
+}
+
+#review-form {
+  margin: auto;
+  width: 20rem;
+  border-color: #282c34;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 1rem;
+}
 /* existing css */
 .App {
   text-align: center;
