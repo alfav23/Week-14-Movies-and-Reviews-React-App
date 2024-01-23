@@ -1,31 +1,32 @@
 import './App.css';
-import Movie from './movie'
-import './images'
+import Movie from './movie';
+import './images/Locked-in-img.jpg';
 
-let MovieList = [
+// array of movies with name, synopsis, and an average score based on stars that will be updated
+let movieList = [
   {
     movieName: 'Locked-in',
     movieSynopsis: 'A movie about passion and DEATH',
-    overallReview: 0,
+    overallStars: 0,
   },
   {
     movieName: 'Saltburn',
     movieSynopsis: 'Another movie about passion and DEATH',
-    overallReview: 0,
+    overallStars: 0,
   },
   {
     movieName: 'Barbie',
     movieSynopsis: 'A movie about toxic masculinity...or toxic femininity...or...',
-    overallReview: 0,
+    overallStars: 0,
   },
-]
+];
 
 function App() {
   return (
     <div className="App">
-      <Movie movies = {MovieList} />
+      <Movie movies = {movieList} />
     </div>
   );
 }
 
-export default App
+export default App;
