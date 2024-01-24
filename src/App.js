@@ -36,6 +36,7 @@ let movieList = [
 function App() {
   return (
     <div className="App text-white">
+      {/* mapping movie list onto movie component */}
       {movieList.map((movie, index) => (
        <Movie key={index} movies = {movie} /> 
       ))}

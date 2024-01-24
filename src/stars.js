@@ -14,7 +14,9 @@ export default class Stars extends React.Component {
                     <div className="input-group-prepend">
                         <label className="input-group-text" htmlFor="inputGroupSelect">Stars</label>
                     </div>
+                    {/* unique id for inputs using movie id so that each instance can act independently  */}
                     <select defaultValue='0' className="custom-select" id={`inputGroupSelect-${this.props.movie.id}`}>
+                        {/* options correspond to values to later populate in  review  */}
                         <option value='0'>Choose...</option>
                         <option value="1">⭐</option>
                         <option value="2">⭐⭐</option>
