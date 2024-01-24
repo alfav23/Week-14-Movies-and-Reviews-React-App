@@ -24,12 +24,21 @@ let movieList = [
     overallStars: 0,
     imgURL:'https://www.kenosha.com/wp-content/uploads/2023/08/et00072466-jjadjvahwx-landscape-copy-980x653.png',
   },
+  {
+    id: 4,
+    movieName: 'Renfield',
+    movieSynopsis: "The peak of Nicholas Cages' Career",
+    overallStars: 0,
+    imgURL:'https://m.media-amazon.com/images/I/71CIBa5TMAL._AC_UF894,1000_QL80_.jpg',
+  },
 ];
 
 function App() {
   return (
-    <div className="App">
-      <Movie movies = {movieList} />
+    <div className="App text-white">
+      {movieList.map((movie, index) => (
+       <Movie key={index} movies = {movie} /> 
+      ))}
     </div>
   );
 }
